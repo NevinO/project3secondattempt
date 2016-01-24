@@ -29,6 +29,10 @@ gem 'bootswatch-rails'
 gem 'jquery-turbolinks'
 gem 'puma'
 
+# Second wave gems
+gem 'sqlite3'
+gem 'haml', '~> 4.0.5'
+gem 'simple_form', '~> 3.0.2'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -55,4 +59,5 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'pry'
   gem 'pry-nav'
+
 end

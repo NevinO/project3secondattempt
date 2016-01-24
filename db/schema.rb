@@ -11,15 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150916221135) do
+ActiveRecord::Schema.define(version: 20160114221135) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "exercises", force: true do |t|
+    t.string   "name"
+    t.integer  "sets"
+    t.integer  "reps"
+    t.integer  "workout_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "exercises", ["workout_id"], name: "index_exercises_on_workout_id"
+
+  # or create_table "workouts", force: true do |t|
   create_table "workouts", force: :cascade do |t|
     t.text     "body"
     t.text     "notes"
     t.date     "date"
+    t.string   "workout"
+    t.string   "mood"
+    t.string   "length"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
