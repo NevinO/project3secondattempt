@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use postgresql as the database for Active Record
@@ -40,6 +39,7 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+end
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -69,8 +69,8 @@ gem 'rails-api'
 gem 'ransack'
 gem 'responders'
 gem 'slim'
-gem 'spa_rails', github: 'Rezonans/spa_rails'
-gem 'sprockets', '~> 2.12.3' #need for spa_rails old version
+#gem 'spa_rails', github: 'Rezonans/spa_rails'
+#gem 'sprockets', '~> 2.12.3' #need for spa_rails old version
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-angular'
@@ -94,6 +94,5 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-satellizer', '0.11.3'
   gem 'rails-assets-ui-router'
   gem 'rails-assets-ui-utils'
-
 end
 
