@@ -60,5 +60,8 @@ gem 'launchy'
 gem 'mandrill_mailer'
 gem 'mini_magick', '4.2.7'
 
+gem 'rails_admin'
+gem 'ransack'
+
 end
 
