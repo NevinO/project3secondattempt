@@ -53,7 +53,9 @@ end
 gem 'carrierwave-data-uri'
 gem 'database_cleaner'
 gem 'devise'
+gem 'factory_girl_rails'
 gem 'faker'
+gem 'mandrill_mailer'
 gem 'mini_magick', '4.2.7'
 
 end
