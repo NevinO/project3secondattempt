@@ -22,5 +22,13 @@ module Fitapp
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    config.angular_templates.inside_paths << Rails.root.join('frontend')
+
+    config.api_only = false
+
+    config.autoload_paths << Rails.root.join('lib', 'autoload')
+
+    require Rails.root.join('lib', 'sass_helpers.rb')
   end
 end
