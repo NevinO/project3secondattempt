@@ -50,7 +50,10 @@ group :development do
 end
 
 # For seed data
+gem 'carrierwave-data-uri'
 gem 'database_cleaner'
 gem 'faker'
+gem 'mini_magick', '4.2.7'
+
 end
 
