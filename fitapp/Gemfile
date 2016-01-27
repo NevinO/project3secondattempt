@@ -72,5 +72,28 @@ gem 'slim'
 gem 'spa_rails', github: 'Rezonans/spa_rails'
 gem 'sprockets', '~> 2.12.3' #need for spa_rails old version
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-angular-animate'
+  gem 'rails-assets-angular'
+  gem 'rails-assets-ui-utils'
+  gem 'rails-assets-ui-router'
+  gem 'rails-assets-restangular', '1.5.1'
+  gem 'rails-assets-lodash'
+  gem 'rails-assets-angular-bootstrap'
+  gem 'rails-assets-bootstrap'
+  gem 'rails-assets-angular-ui-select', github: 'sars/angular-ui-select' # https://github.com/angular-ui/ui-select/pull/1068
+  gem 'rails-assets-moment'
+  gem 'rails-assets-angular-timer'
+  gem 'rails-assets-humanize-duration'
+  gem 'rails-assets-ngmap'
+  gem 'rails-assets-angular-checklist-model'
+  gem 'rails-assets-angular-mask'
+  gem 'rails-assets-angular-permission'
+  gem 'rails-assets-ngInfiniteScroll'
+  gem 'rails-assets-ngImgCrop'
+  gem 'rails-assets-angular-ui-notification'
+  gem 'rails-assets-angular-sanitize'
+  gem 'rails-assets-satellizer', '0.11.3'
+
 end
 
