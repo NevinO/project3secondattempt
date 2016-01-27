@@ -50,21 +50,27 @@ group :development do
 end
 
 # For seed data
+gem 'active_model_serializers', '0.8.3'
+gem 'angular-rails-templates', github: 'sars/angular-rails-templates'
 gem 'bootstrap-sass', '~> 3.3.5'
+gem 'cancancan', '~> 1.10'
 gem 'carrierwave-data-uri'
 gem 'database_cleaner'
 gem 'devise'
 gem 'factory_girl_rails'
 gem 'faker'
+gem 'jwt_authentication', github: 'Rezonans/jwt_authentication', tag: 'v0.0.5'
 gem 'kaminari'
 gem 'launchy'
 gem 'mandrill_mailer'
 gem 'mini_magick', '4.2.7'
-
 gem 'rails_admin'
+gem 'rails-api'
 gem 'ransack'
 gem 'responders'
 gem 'slim'
+gem 'spa_rails', github: 'Rezonans/spa_rails'
+gem 'sprockets', '~> 2.12.3' #need for spa_rails old version
 
 end
 
