@@ -45,8 +45,12 @@ group :development do
   gem 'spring'
 
 group :development do
-  gem 'quiet_assets'
   gem 'letter_opener'
+  gem 'quiet_assets'
 end
+
+# For seed data
+gem 'database_cleaner'
+gem 'faker'
 end
 
