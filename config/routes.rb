@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  resources :workouts do
-  	resources :exercises
+  devise_for :users
+  resources :books do
+  	resources :reviews
   end
-  root 'workouts#index'
+  root 'books#index'
 end
